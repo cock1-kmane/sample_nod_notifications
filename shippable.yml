@@ -54,23 +54,23 @@ integrations:
       on_failure: always
       on_pull_request: always
      
-    - integrationName: ci-img1et
-      type: webhook
-      payload:
-        - versionName=Shippable Run $BUILD_NUMBER 
-      on_success: always
-      on_failure: always
-      on_pull_request: always
-      on_start: always 
+    - integrationName: ci-img1et
+      type: webhook
+      payload:
+        - versionName=Shippable Run $BUILD_NUMBER 
+      on_success: always
+      on_failure: always
+      on_pull_request: always
+      on_start: always 
       
     - integrationName: ci-img2et
-      type: webhook
-      payload:
-        - versionName=Shippable Run $BUILD_NUMBER 
-      on_success: always
-      on_failure: always
-      on_pull_request: always
-      on_start: always 
+      type: webhook
+      payload:
+        - versionName=Shippable Run $BUILD_NUMBER 
+      on_success: always
+      on_failure: always
+      on_pull_request: always
+      on_start: always 
      
     - integrationName: email
       type: email
