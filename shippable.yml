@@ -54,7 +54,7 @@ integrations:
       on_failure: always
       on_pull_request: always
      
-    - integrationName: ci-img1et
+    - integrationName: ci-img1et
       type: webhook
       payload:
         - versionName=Shippable Run $BUILD_NUMBER 
