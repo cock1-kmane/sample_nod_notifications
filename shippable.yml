@@ -29,6 +29,8 @@ build:
    # - sleep 15m
     #- cs ps
     
+  cache: true
+    
 integrations:
   notifications:
    # - integrationName: ship-samplegolproject
