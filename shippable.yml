@@ -39,29 +39,20 @@ integrations:
         - CONTAINER_NAME=$SHIPPABLE_CONTAINER_NAME
         - FOO=bar
         - BOO=buzz
-      on_start: never
-      on_success: always
-      on_failure: change
-      #on_pull_request: never
+     
       
     - integrationName: ship-samplenodnotificationsissue
       type: webhook
       payload:
         - title=Failure - $REPO_FULL_NAME - $BUILD_NUMBER
         - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) failed for $COMPARE_URL
-      on_start: never
-      on_success: always
-      on_failure: change
-      #on_pull_request: never
+     
      
     - integrationName: ci-img1et
       type: webhook
       payload:
         - versionName=Shippable Run $BUILD_NUMBER 
-      on_start: never
-      on_success: always
-      on_failure: change
-      #on_pull_request: never
+      
       
    # - integrationName: ci-img2et
     #  type: webhook
@@ -77,20 +68,13 @@ integrations:
       recipients: 
         - shiphitchcock1@gmail.com
         - varsha@shippable.com
-      on_start: never
-      on_success: always
-      on_failure: change
-      #on_pull_request: never
+      
       
     - integrationName: ship-slack
       type: slack
       recipients:
         - "#hitchcock1-public"
         - pvt-channel
-      on_start: never
-      on_success: always
-      on_failure: change
-      #on_pull_request: never
       
    # - integrationName: irc
     #  type: irc
@@ -107,7 +91,5 @@ integrations:
         - '#hitchcock1'
         - '#hitchcock1pvt'
         - '@shiphitchcock1'
-      on_start: never
-      on_success: always
-      on_failure: change
-      #on_pull_request: never
+     
+     
