@@ -27,7 +27,7 @@ build:
   ci:
     - node --version
    # - sleep 15m
-    - cs ps
+    #- cs ps
     
 integrations:
   notifications:
@@ -50,7 +50,7 @@ integrations:
         - title=Failure - $REPO_FULL_NAME - $BUILD_NUMBER
         - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) failed for $COMPARE_URL
       on_start: never
-      on_success: change
+      on_success: always
       on_failure: change
       #on_pull_request: never
      
@@ -59,7 +59,7 @@ integrations:
       payload:
         - versionName=Shippable Run $BUILD_NUMBER 
       on_start: never
-      on_success: change
+      on_success: always
       on_failure: change
       #on_pull_request: never
       
@@ -78,9 +78,9 @@ integrations:
         - shiphitchcock1@gmail.com
         - varsha@shippable.com
       on_start: never
-      on_success: never
-      on_failure: never
-      on_pull_request: never
+      on_success: always
+      on_failure: change
+      #on_pull_request: never
       
     - integrationName: ship-slack
       type: slack
@@ -88,7 +88,7 @@ integrations:
         - "#hitchcock1-public"
         - pvt-channel
       on_start: never
-      on_success: change
+      on_success: always
       on_failure: change
       #on_pull_request: never
       
@@ -108,6 +108,6 @@ integrations:
         - '#hitchcock1pvt'
         - '@shiphitchcock1'
       on_start: never
-      on_success: change
+      on_success: always
       on_failure: change
       #on_pull_request: never
