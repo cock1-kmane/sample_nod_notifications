@@ -58,19 +58,19 @@ integrations:
       type: webhook
       payload:
         - versionName=Shippable Run $BUILD_NUMBER 
-      on_start: always
+      on_start: never
       on_success: always
       on_failure: always
       on_pull_request: always
       
-    - integrationName: ci-img2et
-      type: webhook
-      payload:
-        - versionName=Shippable Run $BUILD_NUMBER job
-      on_start: always
-      on_success: always
-      on_failure: always
-      on_pull_request: always 
+   # - integrationName: ci-img2et
+    #  type: webhook
+     # payload:
+      #  - versionName=Shippable Run $BUILD_NUMBER job
+     # on_start: always
+      #on_success: always
+      #on_failure: always
+      #on_pull_request: always 
      
     - integrationName: email
       type: email
