@@ -27,7 +27,7 @@ build:
   ci:
     - node --version
    # - sleep 15m
-    #- cs ps
+    - cs ps
     
 integrations:
   notifications:
@@ -40,7 +40,7 @@ integrations:
         - FOO=bar
         - BOO=buzz
       on_start: never
-      on_success: change
+      on_success: always
       on_failure: change
       #on_pull_request: never
       
