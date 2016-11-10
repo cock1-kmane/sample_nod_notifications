@@ -59,7 +59,7 @@ integrations:
       payload:
         - versionName=Shippable Run $BUILD_NUMBER 
       on_start: always
-      on_success: always
+      on_success: change
       on_failure: always
       on_pull_request: always
       
