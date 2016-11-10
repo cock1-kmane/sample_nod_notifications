@@ -47,7 +47,6 @@ integrations:
         - title=Failure - $REPO_FULL_NAME - $BUILD_NUMBER
         - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) failed for $COMPARE_URL
      
-     
     - integrationName: ci-img1et
       type: webhook
       payload:
